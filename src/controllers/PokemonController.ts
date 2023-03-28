@@ -1,7 +1,7 @@
-import { PokemonModel } from "db/tableModels/PokemonModel"
+import { PokemonModel } from "../db/tableModels/PokemonModel"
 import { FastifyReply, FastifyRequest } from "fastify"
-import { STANDARD } from "helpers/Constants"
-import { handleServerError } from "helpers/Errors"
+import { STANDARD } from "../helpers/Constants"
+import { handleServerError } from "../helpers/Errors"
 
 export const getPokemon = async (req: FastifyRequest, res: FastifyReply) => {
     try {

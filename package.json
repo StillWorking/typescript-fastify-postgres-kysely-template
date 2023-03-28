@@ -10,7 +10,8 @@
     "postinstall": "npx typesync && husky install",
     "lint": "./node_modules/.bin/eslint",
     "migrate": "bash src/scripts/migrate.sh",
-    "seed": "bash src/scripts/seed.sh"
+    "seed": "bash src/scripts/seed.sh",
+    "generate": "kysely-codegen --dialect=postgres --url=postgresql://admin:password@localhost:5430/template"
   },
   "keywords": [],
   "author": "Taha Sheikh",

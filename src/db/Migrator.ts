@@ -12,7 +12,7 @@ async function migrateToLatest() {
         provider: new FileMigrationProvider({
             fs,
             path,
-            migrationFolder: path.resolve('dist/backend/database/migrations')
+            migrationFolder: path.resolve('dist/src/db/migrations')
         }),
     })
 

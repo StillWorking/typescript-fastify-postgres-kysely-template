@@ -1,6 +1,6 @@
 import fastify from 'fastify'
 import pino from 'pino'
-import pokemonRouter from 'router/PokemonRouter';
+import pokemonRouter from './router/PokemonRouter';
 
 const port = 5000;
 

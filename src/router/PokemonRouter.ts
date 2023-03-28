@@ -1,5 +1,5 @@
 import { FastifyInstance } from 'fastify'
-import { getPokemon } from 'controllers/PokemonController'
+import { getPokemon } from '../controllers/PokemonController'
 
 async function pokemonRouter(fastify: FastifyInstance) {
     fastify.route({

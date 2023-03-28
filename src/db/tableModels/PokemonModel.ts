@@ -1,5 +1,5 @@
-import { db } from "db/Database";
-import { Pokemon, PokemonSchema } from "db/schema/PokemonSchema";
+import { db } from "../Database";
+import { Pokemon, PokemonSchema } from "../schema/PokemonSchema";
 
 export class PokemonModel {
     static async findById(id: number) {

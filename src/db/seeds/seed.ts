@@ -1,4 +1,4 @@
-import { PokemonModel } from 'db/tableModels/PokemonModel';
+import { PokemonModel } from '../../db/tableModels/PokemonModel';
 import pokedex from './data/pokedex.json'
 
 async function seed() {
