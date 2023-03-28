@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: template
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "5430:5432"
+
+volumes:
+  db_data:
